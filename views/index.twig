@@ -1,0 +1,13 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+	<h1>{{title}}</h1>
+	{% if (user) %}
+		<p>Wilkommen zurück
+			{{ user.username }}</p>
+		<a href="/log-out">Log out</a>
+	{% else %}
+		<p>Wilkommen</p>
+		<a href="/log-in">Bitte melde dich an</a>
+	{% endif %}
+{% endblock %}
