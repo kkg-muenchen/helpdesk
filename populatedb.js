@@ -39,3 +39,5 @@ default_kategorie.save(function (err, _) {
     if (err) return console.log("Error creating default kategorie: " + err);
     console.log("default kategorie created");
 });
+
+console.log("Done");
