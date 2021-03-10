@@ -1,4 +1,4 @@
-var mongoose = require('mongoose');
+var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var RolleSchema = new Schema({
@@ -6,8 +6,8 @@ var RolleSchema = new Schema({
     permissions: [{ type: String, trim: true }]
 });
 
-RolleSchema.virtual('url').get(function () {
-    return '/rollen/' + this._id;
+RolleSchema.virtual("url").get(function () {
+    return "/rollen/" + this._id;
 });
 
-module.exports = mongoose.model('Rolle', RolleSchema);
+module.exports = mongoose.model("Rolle", RolleSchema);
