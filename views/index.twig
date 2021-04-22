@@ -5,9 +5,9 @@
 	{% if (user) %}
 		<p>Wilkommen zurück
 			{{ user.username }}</p>
-		<a href="/log-out">Log out</a>
+		<a href="/logout">Log out</a>
 	{% else %}
 		<p>Wilkommen</p>
-		<a href="/log-in">Bitte melde dich an</a>
+		<a href="/login">Bitte melde dich an</a>
 	{% endif %}
 {% endblock %}
