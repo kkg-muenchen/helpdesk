@@ -3,7 +3,7 @@ var Schema = mongoose.Schema;
 
 var TicketSchema = new Schema({
     status: { type: Number, min: 0, max: 2, default: 0, required: true },
-    kategorie: { type: Schema.Types.ObjectId, ref: "Kategorie", required: true },
+    kategorie: { type: Schema.Types.ObjectId, ref: "Categorie", required: true },
     beschreibung: { type: String, trim: true, required: true },
     raum: { type: String, maxlength: 100, trim: true, required: true },
     autor: { type: Schema.Types.ObjectId, ref: "User", required: true },

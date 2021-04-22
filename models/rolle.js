@@ -7,7 +7,7 @@ var RolleSchema = new Schema({
 });
 
 RolleSchema.virtual("url").get(function () {
-    return "/rollen/" + this._id;
+    return "/role/" + this._id;
 });
 
-module.exports = mongoose.model("Rolle", RolleSchema);
+module.exports = mongoose.model("Role", RolleSchema);

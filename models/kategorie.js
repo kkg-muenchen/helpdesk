@@ -6,7 +6,7 @@ var KategorieSchema = new Schema({
 });
 
 KategorieSchema.virtual("url").get(function () {
-    return "/kategorien/" + this._id;
+    return "/category/" + this._id;
 });
 
-module.exports = mongoose.model("Kategorie", KategorieSchema);
+module.exports = mongoose.model("Categorie", KategorieSchema);
