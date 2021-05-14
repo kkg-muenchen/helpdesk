@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>{{ title }}</title>
 		<link rel="stylesheet" href="/stylesheets/style.css"/>
-	</head>
+
+		{% block head %}
+			{% if title %}
+				<title>{{ title }}</title>
+			{% else %}
+				<title>KKG Helpdesk</title>
+			{% endif %}
+		{% endblock %}
+	</h>
 	<body>
 		{% block body %}{% endblock %}
 	</body>
